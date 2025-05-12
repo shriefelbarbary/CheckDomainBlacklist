@@ -7,8 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Retrieve API Key from environment variable
-API_KEY = os.getenv("VIRUSTOTAL_API_KEY")
-
+API_KEY = "7019e4123a3e38c9ed8f8afd087ace44d8a02cb686b5f0227d60b59d8cc8a3eb"
 def check_domain_virustotal(api_key, domain):
     url = f"https://www.virustotal.com/api/v3/domains/{domain}"
     headers = {
